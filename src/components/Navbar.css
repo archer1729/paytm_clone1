@@ -1,0 +1,149 @@
+/* Reset & base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Urbanist", sans-serif;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Container and layout */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.navbar-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7rem;
+}
+
+/* Logo section */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.paytm-logo {
+  height: 3.5rem;
+  width: auto;
+}
+
+.bhimupi-logo {
+  height: 2.5rem;
+  width: auto;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #00baf2;
+}
+
+/* Dropdown arrow */
+.caret {
+  font-size: 1.1rem;
+  margin-left: 0.3rem;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  min-width: 18rem;
+  padding: 0.8rem 0;
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  padding: 0.8rem 1.5rem;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f6fbff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Sign in button */
+.login-btn button {
+  background-color: #00baf2;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.login-btn button:hover {
+  background-color: #0098d8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+  .paytm-logo {
+    height: 3rem;
+  }
+  .bhimupi-logo {
+    height: 2rem;
+  }
+}

@@ -1,0 +1,427 @@
+/* HeroSection.css */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f5f7fa;
+  position: relative;
+}
+
+/* Center Hero Image */
+.hero-center-image img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 728px;
+  height: 90px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Container for icons and ad banner */
+.hero-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Bottom row of icons + banner */
+.hero-bottom-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  width: 70%;
+  height: 200px;
+}
+
+/* Container for icon row + title */
+.hero-icons-container {
+  width: 70%;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  align-self: flex-start;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-icons-title {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Row of icons */
+.hero-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: auto; /* allows scroll if icons overflow */
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 70px;
+}
+
+.icon-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 0.4rem;
+  transition: transform 0.3s ease;
+}
+
+.icon-item img:hover {
+  transform: scale(1.08);
+}
+
+.icon-item p {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Square Ad Banner beside icon box */
+.hero-banner {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-bottom-row {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .hero-icons-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .hero-banner {
+    width: 90%;
+    height: 220px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-center-image img {
+    width: 90%;
+    height: auto;
+  }
+
+  .hero-icons {
+    gap: 8px;
+  }
+
+  .icon-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-icons-container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .hero-icons-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .hero-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-banner {
+    width: 95%;
+    height: 180px;
+  }
+
+  .icon-item img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .icon-item p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Two Banners Below Hero Bottom Row */
+.hero-dual-banners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 30px;
+  width: 70%;
+}
+
+.banner-item {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.banner-item:hover {
+  transform: scale(1.03);
+}
+
+.banner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-dual-banners {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner-item {
+    width: 90%;
+  }
+}
+
+/* 🔹 3 Banner Container */
+.hero-three-banners {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  width: 70%;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+/* 🔹 Each Banner */
+.hero-three-banners .banner-item {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 150px; 
+}
+
+.hero-three-banners .banner-item:hover {
+  transform: scale(1.03);
+}
+
+/* 🔹 Banner Images */
+.hero-three-banners .banner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+  .hero-three-banners {
+    gap: 1rem;
+  }
+
+  .hero-three-banners .banner-item {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-three-banners {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .hero-three-banners .banner-item {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+/* Travel Section - overall container */
+.hero-travel-section {
+  display: flex;
+  justify-content: space-between;   
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 2rem;
+  margin: 2rem auto;
+  width:70%;
+  max-width: 1000px;  
+  height: 120px;       
+  box-sizing: border-box;
+  gap: 3rem;           
+}
+
+/* Left side - title + icons */
+.travel-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;         
+  flex: 1;
+}
+
+/* Title styling */
+.travel-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+  text-align: left;
+}
+
+/* Icons row */
+.travel-icons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  flex-wrap: nowrap;       
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+}
+
+.travel-icons-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.travel-icons-wrapper::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+/* Each icon block */
+.travel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 70px;
+}
+
+.travel-item img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  transition: transform 0.3s ease;
+}
+.travel-item img:hover {
+  transform: scale(1.08);
+}
+
+.travel-item p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+/* Right side - Paytm Travel Logo */
+.travel-banner {
+  display: flex;
+  justify-content: flex-end;   
+  align-items: center;
+  flex-shrink: 0;
+  width: 220px;               
+}
+
+.travel-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsive behavior */
+@media (max-width: 900px) {
+  .hero-travel-section {
+    flex-direction: column;
+    height: auto;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .travel-banner {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .travel-icons-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .travel-item img {
+    width: 36px;
+    height: 36px;
+  }
+  .travel-item p {
+    font-size: 0.82rem;
+  }
+  .travel-banner {
+    width: 80%;
+  }
+}

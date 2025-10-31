@@ -1,0 +1,809 @@
+.creditcard-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  background-color: #fff;
+}
+
+.creditcard-left {
+  flex: 1;
+}
+
+.cc-subtitle {
+  font-size: 20px;
+  color: #0d47a1;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.cc-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.cc-desc {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.cc-partner-heading {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.cc-partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.cc-partners img {
+  height: 45px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.cc-partners img:hover {
+  transform: scale(1.1);
+}
+
+.creditcard-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.creditcard-right img {
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Credit Card Section - existing styles remain same */
+
+.cc-benefits-section {
+  text-align: center;
+  background-color: #f6faff;
+  padding: 60px 0;
+}
+
+.benefit-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+}
+
+.benefit-icon-wrapper {
+  background-color: #e6efff;
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.benefit-icon {
+  color: #003399;
+  font-size: 2rem;
+}
+
+.benefit-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.4;
+}
+
+.benefit-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0b0b0b;
+  line-height: 1.2;
+}
+
+/* ===== HDFC Co-Branded Section ===== */
+.cc-hdfc-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6faff;
+  border-radius: 24px;
+  margin: 60px auto;
+  padding: 60px 80px;
+  width: 90%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.cc-hdfc-left img {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.cc-hdfc-right {
+  flex: 1;
+  margin-left: 60px;
+}
+
+.hdfc-logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.cc-hdfc-subtitle {
+  color: #003399;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.cc-hdfc-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0d0d0d;
+}
+
+.cc-hdfc-desc {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.cc-hdfc-btn {
+  background-color: #002f91;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cc-hdfc-btn:hover {
+  background-color: #001d66;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .cc-hdfc-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .cc-hdfc-right {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .cc-hdfc-title {
+    font-size: 1.8rem;
+  }
+
+  .cc-hdfc-desc {
+    font-size: 1rem;
+  }
+}
+
+
+.insurance-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 4rem 3rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .insurance-section {
+    flex-direction: row;
+  }
+}
+
+/* LEFT SECTION */
+.insurance-left {
+  flex: 1;
+}
+
+.insurance-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.insurance-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* ICON ROW */
+.insurance-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.icon-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-circle {
+  background-color: #021f7f;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  color: #0072ff;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-item p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: -12px;
+  background: #ffeb3b;
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+/* RIGHT SECTION */
+.insurance-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.insurance-image {
+  width: 100%;
+  max-width: 420px;
+  object-fit: contain;
+}
+
+.floating-icon {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.shield-icon {
+  color: #0072ff;
+  width: 24px;
+  height: 24px;
+}
+
+/* ------------------ WHY CHOOSE PAYTM SECTION ------------------ */
+.why-choose-section {
+  padding: 80px 100px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.why-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #001e6c;
+  margin-bottom: 50px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+  justify-items: center;
+}
+
+.why-card {
+  text-align: center;
+  max-width: 280px;
+}
+
+.why-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.why-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #001e6c;
+  margin-bottom: 8px;
+}
+
+.why-card p {
+  color: #333;
+  font-size: 1.95rem;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- PAYTM ADVANTAGE SECTION --- */
+.advantage-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  padding: 40px 50px;
+  gap: 30px;
+  transition: all 0.3s ease;
+}
+
+.advantage-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+}
+
+.advantage-left {
+  flex: 1;
+}
+
+.advantage-title {
+  font-size: 2rem;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.advantage-highlight {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.orange {
+  color: #ff7a00;
+}
+.green {
+  color: #00b67a;
+}
+.blue {
+  color: #007aff;
+}
+
+.advantage-text {
+  font-size: 1.95rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 440px;
+}
+
+.advantage-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.advantage-image {
+  width: 85%;
+  max-width: 380px;
+  border-radius: 20px;
+}
+
+/* Make responsive */
+@media (max-width: 900px) {
+  .advantage-container {
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+  }
+  .advantage-image {
+    width: 70%;
+    margin-top: 20px;
+  }
+}
+
+/* --- PARTNERS SECTION --- */
+.partners-section {
+  background: linear-gradient(180deg, #0096ff 0%, #00b8ff 100%);
+  text-align: center;
+  padding: 60px 30px;
+  color: #fff;
+  border-radius: 20px;
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.partners-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.partner-card {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.partner-card img {
+  max-width: 100%;
+  max-height: 50px;
+  object-fit: contain;
+}
+
+.partner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.partners-btn {
+  background: #fff;
+  color: #007aff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.partners-btn:hover {
+  background: #f4f4f4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .partner-card {
+    width: 120px;
+    height: 70px;
+  }
+}
+
+.loan-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 80px 100px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+/* LEFT SIDE */
+.loan-left {
+  flex: 1;
+}
+
+.loan-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.loan-icon {
+  background-color: #e6f4ff;
+  color: #007aff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loan-left h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #00baf2;
+}
+
+.loan-subtext {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+/* PARTNER LOGOS */
+.loan-partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.loan-partner-card {
+  width: 120px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.loan-partner-card img {
+  max-width: 100%;
+  max-height: 30px;
+  object-fit: contain;
+}
+
+.loan-partner-card:hover {
+  transform: translateY(-4px);
+}
+
+/* RIGHT SIDE */
+.loan-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.loan-image {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .loan-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+  }
+
+  .loan-partners {
+    justify-content: center;
+  }
+}
+
+/* ===== LOAN FEATURE SECTION ===== */
+.loan-feature-section {
+  text-align: center;
+  margin: 80px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.loan-feature-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 40px;
+}
+
+/* MAIN BLUE CARD */
+.loan-feature-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #2874f0, #36b7ff);
+  border-radius: 20px;
+  padding: 40px 60px;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* LEFT SIDE */
+.loan-feature-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.loan-feature-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.loan-feature-left h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* RIGHT SIDE LIST */
+.loan-feature-list {
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .loan-feature-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .loan-feature-list {
+    padding-left: 20px;
+  }
+}
+/* ===== CONTROL SECTION ===== */
+.loan-control-section {
+  text-align: center;
+  margin: 80px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.loan-control-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.loan-control-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.loan-control-card {
+  text-align: left;
+}
+
+.loan-control-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.loan-control-card h3 {
+  color: #0056d2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.loan-control-card p {
+  color: #333;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* ===== GREEN CARD ===== */
+.loan-steps-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00bfa5;
+  border-radius: 20px;
+  padding: 40px 60px;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.loan-steps-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.loan-steps-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.loan-steps-left h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.loan-steps-list {
+  list-style-type: none;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .loan-steps-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .loan-steps-list {
+    padding-left: 10px;
+  }
+}

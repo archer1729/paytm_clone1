@@ -1,0 +1,286 @@
+.flight-booking-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.flight-booking-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+/* Trip Type Selector */
+.trip-type-selector {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.radio-option input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #00baf2;
+}
+
+.radio-label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Main Booking Section */
+.booking-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* Location Section */
+.location-section {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.location-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-label {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+}
+
+.location-input {
+  padding: 12px 16px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.2s;
+}
+
+.location-input:focus {
+  outline: none;
+  border-color: #00baf2;
+  box-shadow: 0 0 0 3px rgba(0, 186, 242, 0.1);
+}
+
+.swap-button {
+  background: white;
+  border: 1px solid #d4d4d4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #00baf2;
+  transition: all 0.2s;
+  margin-bottom: 0;
+}
+
+.swap-button:hover {
+  background: #f0f9ff;
+  border-color: #00baf2;
+}
+
+/* Details Section */
+.details-section {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.detail-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.detail-input {
+  padding: 12px 16px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #333;
+  transition: all 0.2s;
+}
+
+.detail-input:focus {
+  outline: none;
+  border-color: #00baf2;
+  box-shadow: 0 0 0 3px rgba(0, 186, 242, 0.1);
+}
+
+.return-input {
+  font-weight: 500;
+}
+
+.add-return-btn {
+  padding: 12px 16px;
+  border: 1px dashed #00baf2;
+  border-radius: 8px;
+  background: white;
+  color: #00baf2;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-return-btn:hover {
+  background: #f0f9ff;
+}
+
+.passenger-input {
+  padding-right: 40px;
+  font-weight: 500;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  color: #666;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.search-flights-btn {
+  padding: 12px 32px;
+  background: #00baf2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.search-flights-btn:hover {
+  background: #0099cc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 186, 242, 0.3);
+}
+
+/* Special Fares Section */
+.special-fares-section {
+  padding-top: 20px;
+}
+
+.special-fares-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.fares-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.extra-savings {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #00a67e;
+  font-weight: 600;
+}
+
+.savings-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: #00a67e;
+  color: white;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.fares-options {
+  display: flex;
+  gap: 20px;
+}
+
+.fare-option {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fare-option strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.fare-desc {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .details-section {
+    flex-wrap: wrap;
+  }
+  
+  .detail-field {
+    min-width: calc(50% - 6px);
+  }
+  
+  .search-flights-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-section {
+    flex-direction: column;
+  }
+  
+  .swap-button {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+  
+  .details-section {
+    flex-direction: column;
+  }
+  
+  .detail-field {
+    min-width: 100%;
+  }
+  
+  .fares-options {
+    flex-direction: column;
+  }
+}
