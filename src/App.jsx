@@ -9,7 +9,7 @@ import Loan from "./components/Loan";
 import Electricity from "./components/Electricity";
 import Creditcards from "./components/CreditCards";
 import LicInsurance from "./components/LicInsurance";
-import FlightBooking from "./components/Flightbooking";
+import FlightBooking from "./components/FlightBooking";
 import PaytmLogin from "./components/PaytmLogin";
 import {Footer} from "./components/footer";
 import "./App.css";
