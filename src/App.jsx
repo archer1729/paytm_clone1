@@ -11,7 +11,7 @@ import Creditcards from "./components/CreditCards";
 import LicInsurance from "./components/LicInsurance";
 import FlightBooking from "./components/FlightBooking";
 import PaytmLogin from "./components/PaytmLogin";
-import {Footer} from "./components/footer";
+import {Footer} from "./components/Footer";
 import "./App.css";
 
 function App() {
