@@ -2,7 +2,7 @@ import React from "react";
 import "./payments.css";
 import hdfc from "../assets/hdfc.png";
 import sbi from "../assets/sbi.png";
-import axis from "../assets/axis.webp";
+import axis from "../assets/Axis.webp";
 import kotak from "../assets/kotak.webp";
 import credit_cards from "../assets/creditcard_banner.avif"; 
 import hdfc_cards from "../assets/creditcard_banner2.avif"; 
