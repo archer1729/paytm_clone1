@@ -5,7 +5,7 @@ import mobileIcon from "../assets/mobile_flat_icon.avif";
 import electricityIcon from "../assets/bulb_flat_icon.avif";
 import dthIcon from "../assets/dth_flat_icon.avif";
 import metroIcon from "../assets/metro_flat_icon.avif";
-import landline from "../assets/landlinebill.avif";
+import landline from "../assets/Landlinebill.avif";
 import Education from "../assets/education.avif";
 import payloan from "../assets/loans.webp";
 import invest_stocks from "../assets/stocks.png";
